@@ -1,5 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { describe, it, vi, expect } from "vitest";
+import "@testing-library/jest-dom";
 import { Button } from "./Button";
 
 describe("Button Component", () => {

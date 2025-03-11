@@ -127,3 +127,17 @@ li > a {
   align-items: center;
   justify-content: center;
 }
+
+.playground {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2em;
+  border-radius: 2em;
+  border: 1px dashed white;
+  min-width: 80vw;
+}
+
+.playground div {
+  min-width: 100%;
+}
