@@ -1,0 +1,14 @@
+:root {
+  --primary-color: #645aff;
+  --primary-hover: #645aff80;
+  --secondary-color: #ddd;
+  --secondary-hover: #dddddd80;
+  --text-primary: white;
+  --text-secondary: #333;
+  --border-radius: 4px;
+  --transition-speed: 0.3s;
+  --btn-padding: 10px 16px;
+  --font-small: 12px;
+  --font-medium: 14px;
+  --font-large: 16px;
+}

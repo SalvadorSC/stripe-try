@@ -1,16 +1,16 @@
 import { useState, useEffect } from "react";
-import reactLogo from "../../assets/react.svg";
-import viteLogo from "/vite.svg";
-import stripeLogo from "../../assets/stripe_purple.svg";
-import salvascLogo from "../../assets/S.svg";
-import salvascLightLogo from "/S_white.svg";
+import reactLogo from "../../assets/images/react.svg";
+import stripeLogo from "../../assets/images/stripe_purple.svg";
+import salvascLogo from "../../assets/images/S.svg";
 import tsLogo from "../../assets/Typescript_logo_2020.svg";
-import storybookLogo from "../../assets/icon-storybook-default.svg";
-import rtlLogo from "../../assets/rtl_logo.png";
-import vitestLogo from "../../assets/logo-shadow.svg";
+import storybookLogo from "../../assets/images/icon-storybook-default.svg";
+import rtlLogo from "../../assets/images/rtl_logo.png";
+import vitestLogo from "../../assets/images/logo-shadow.svg";
+import salvascLightLogo from "/S_white.svg";
+import viteLogo from "/vite.svg";
 
-import reactRouterLightLogo from "../../assets/rr_logo_dark.svg";
-import reactRouterDarkLogo from "../../assets/react-router_logo.svg";
+import reactRouterLightLogo from "../../assets/images/rr_logo_dark.svg";
+import reactRouterDarkLogo from "../../assets/images/react-router_logo.svg";
 
 import "../../App.css";
 
@@ -117,6 +117,7 @@ function Introduction() {
           </li>
         </ul>
         <p className="read-the-docs">Click on the logos to learn more</p>
+        <a href="https://github.com/SalvadorSC/stripe-try">GitHub Repo</a>
       </div>
 
       <a href="/interview">

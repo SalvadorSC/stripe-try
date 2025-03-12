@@ -15,9 +15,9 @@ const InterviewPlayground = () => {
 
   return (
     <div className="playground">
-      <h1>PlayGround</h1>
+      <h1>Playground 🏖️</h1>
       <h2>Button</h2>
-      <div>
+      <div className="display-section">
         <Button
           label="This is a button"
           key={"example-button"}
@@ -25,13 +25,19 @@ const InterviewPlayground = () => {
           onClick={() => console.log("Button Clicked!")}
           size="medium"
         />
+        <Button
+          label="This is a button"
+          key={"example-button"}
+          onClick={() => console.log("Button Clicked!")}
+          size="medium"
+        />
       </div>
       <h2>Input</h2>
-      <div>
+      <div className="display-section">
         <Input onChange={(e) => setFilterValue(e.target.value)} />
       </div>
       <h2>Table</h2>
-      <div>
+      <div className="display-section">
         <Suspense fallback={<p>Loading data...</p>}>
           <TableWithData filterValue={filterValue} />
         </Suspense>
