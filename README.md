@@ -1,5 +1,23 @@
 # Stripe Interview Assessment
 
+## Index
+
+- [Overview](#overview)
+- [Tech Stack](#tech-stack)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Project](#running-the-project)
+  - [Running Tests](#running-tests)
+  - [Running Storybook](#running-storybook)
+  - [Building for Production](#building-for-production)
+  - [Previewing the Production Build](#previewing-the-production-build)
+- [Architectural Decision Records (ADR)](#architectural-decision-records-adr)
+  - [What is an ADR?](#what-is-an-adr)
+  - [ADRs in This Project](#adrs-in-this-project)
+- [Contact](#contact)
+
 ## Overview
 
 This project is a technical assessment for Stripe, developed by **Salvador Sánchez Campos**. It is a React-based web application utilizing modern frontend technologies to demonstrate coding proficiency and project structuring.
@@ -8,15 +26,31 @@ This project is a technical assessment for Stripe, developed by **Salvador Sánc
 
 The project is built with the following technologies:
 
-| Technology                                                | Description                                                    | Logo                                                              |
-| --------------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------- |
-| **[Vite](https://vite.dev/)**                             | Fast frontend tooling for modern web applications.             | ![Vite Logo](./vite.svg)                                          |
-| **[React](https://react.dev/)**                           | Component-based JavaScript library for building UIs.           | ![React Logo](./src/assets/images/react.svg)                      |
-| **[TypeScript](https://www.typescriptlang.org/)**         | Strongly typed JavaScript for maintainability and scalability. | ![TypeScript Logo](./src/assets/images/Typescript_logo_2020.svg)  |
-| **[React Router](https://reactrouter.com/home)**          | Declarative routing for React applications.                    | ![React Router Logo](./src/assets/images/react-router_logo.svg)   |
-| **[Storybook](https://storybook.js.org/)**                | UI component explorer and development environment.             | ![Storybook Logo](./src/assets/images/icon-storybook-default.svg) |
-| **[React Testing Library](https://testing-library.com/)** | Testing utilities for verifying UI behavior.                   | ![RTL Logo](./src/assets/images/rtl_logo.png)                     |
-| **[Vitest](https://vitest.dev/)**                         | Blazing fast unit testing framework.                           | ![Vitest Logo](./src/assets/images/logo-shadow.svg)               |
+#### Core Technologies
+
+<code><img alt="Vite" height="40" src="./public/vite.svg"></code>
+<code><img alt="React" height="40" src="./src/assets/images/react.svg"></code>
+<code><img alt="TypeScript" height="40" src="./src/assets/images/Typescript_logo_2020.svg"></code>
+<code><img alt="React Router" height="40" src="./src/assets/images/rr_logo_dark.svg"></code>
+
+#### Links
+
+- **[Vite](https://vite.dev/)** - Fast frontend tooling for modern web applications.
+- **[React](https://react.dev/)** - Component-based JavaScript library for building UIs.
+- **[TypeScript](https://www.typescriptlang.org/)** - Strongly typed JavaScript for maintainability and scalability.
+- **[React Router](https://reactrouter.com/home)** - Declarative routing for React applications.
+
+#### Development & Testing
+
+<code><img alt="Storybook" height="40" src="./src/assets/images/icon-storybook-default.svg"></code>
+<code><img alt="React Testing Library" height="40" src="./src/assets/images/rtl_logo.png"></code>
+<code><img alt="Vitest" height="40" src="./src/assets/images/logo-shadow.svg"></code>
+
+#### Links
+
+- **[Storybook](https://storybook.js.org/)** - UI component explorer and development environment.
+- **[React Testing Library](https://testing-library.com/)** - Testing utilities for verifying UI behavior.
+- **[Vitest](https://vitest.dev/)** - Blazing fast unit testing framework.
 
 ## Features
 
@@ -108,3 +142,4 @@ For questions please reach out at:
 
 - **Website:** [salvasc.dev](https://salvasc.dev)
 - **GitHub:** [SalvadorSC](https://github.com/SalvadorSC)
+- **LinkedIn:** [Salvador Sánchez Campos](https://www.linkedin.com/in/salvador-sc/) || [CV](https://www.linkedin.com/in/salvador-sc/overlay/1726479970141/single-media-viewer/?profileId=ACoAAC490U0B4kzM4fRj6AJ9bh_i0-x65Fp--RM)

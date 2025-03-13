@@ -1,37 +1,39 @@
-import React from 'react';
+import React from "react";
 
-import './button.css';
+import "./Button.css";
+import { mockTrackingEvents } from "../../utils/mockTraickingEvents";
 
-export interface ButtonProps {
-  /** Is this the principal call to action on the page? */
-  primary?: boolean;
-  /** What background color to use */
-  backgroundColor?: string;
-  /** How large should the button be? */
-  size?: 'small' | 'medium' | 'large';
-  /** Button contents */
-  label: string;
-  /** Optional click handler */
+interface ButtonProps {
   onClick?: () => void;
+  primary?: boolean;
+  size?: "small" | "medium" | "large";
+  label: string;
 }
 
-/** Primary UI component for user interaction */
-export const Button = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
+const Button: React.FC<ButtonProps> = ({
+  onClick,
+  primary = true,
+  size = "medium",
   label,
-  ...props
-}: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+}) => {
+  const handleOnClick = () => {
+    mockTrackingEvents({
+      event: "Button Clicked",
+      description: { label, primary, size },
+    });
+    if (onClick) {
+      onClick();
+    }
+  };
+
   return (
     <button
-      type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
-      {...props}
+      onClick={handleOnClick}
+      className={`btn-${size} ${primary ? "btn-primary" : "btn-secondary"}`}
     >
       {label}
     </button>
   );
 };
+
+export default Button;
