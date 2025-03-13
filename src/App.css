@@ -1,3 +1,30 @@
+@import "./variables.css";
+
+@font-face {
+  font-family: "TestSoehne";
+  src: url("./assets/") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TestSoehne";
+  src: url("./assets//fonts/test-soehne-leicht-kursiv.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TestSoehne";
+  src: url("./assets//fonts/test-soehne-fett.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "TestSoehne", sans-serif;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -11,11 +38,33 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+.logo.small:hover {
+  filter: drop-shadow(0 0 1em #646cffaa);
+}
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.logo.ts:hover {
+  filter: drop-shadow(0 0 2em #1285ffaa);
+}
+.logo.storybook:hover {
+  filter: drop-shadow(0 0 2em #ff12e74a);
+}
+
+.tech-logos .logo {
+  height: 4em;
+}
+
+.logo.small {
+  height: 2em;
+  max-width: 2em;
+  padding: 0;
+  margin-left: 1em;
 }
 
 @keyframes logo-spin {
@@ -28,15 +77,79 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
+  a .logo.react {
     animation: logo-spin infinite 20s linear;
   }
 }
 
 .card {
   padding: 2em;
+  border-radius: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  background-color: rgba(128, 128, 128, 0.1);
+  margin-bottom: 2em;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(128, 128, 128, 0.2) 0px 7px 29px 0px;
+}
+
+.card:hover {
+  background-color: rgba(128, 128, 128, 0.15);
+}
+
+.top-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  font-weight: b;
+}
+
+.top-card > span {
+  font-size: 3em;
 }
 
 .read-the-docs {
   color: #888;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li:before {
+  content: "+";
+  margin-right: 4px;
+}
+
+li:has(a),
+li > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.playground {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2em;
+  border-radius: 2em;
+  border: 1px dashed white;
+  max-width: 1280px;
+  width: 80vw;
+}
+
+.playground div {
+  min-width: 100%;
+}
+
+.display-section {
+  display: flex;
+  gap: 20px;
+}
+
+h2 {
+  text-decoration: underline;
 }
