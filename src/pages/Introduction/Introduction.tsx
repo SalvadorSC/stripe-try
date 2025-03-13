@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import reactLogo from "../../assets/images/react.svg";
 import stripeLogo from "../../assets/images/stripe_purple.svg";
 import salvascLogo from "../../assets/images/S.svg";
-import tsLogo from "../../assets/Typescript_logo_2020.svg";
+import tsLogo from "../../assets/images/Typescript_logo_2020.svg";
 import storybookLogo from "../../assets/images/icon-storybook-default.svg";
 import rtlLogo from "../../assets/images/rtl_logo.png";
 import vitestLogo from "../../assets/images/logo-shadow.svg";
