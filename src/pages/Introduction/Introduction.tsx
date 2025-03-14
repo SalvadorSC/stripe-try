@@ -6,8 +6,8 @@ import tsLogo from "../../assets/images/Typescript_logo_2020.svg";
 import storybookLogo from "../../assets/images/icon-storybook-default.svg";
 import rtlLogo from "../../assets/images/rtl_logo.png";
 import vitestLogo from "../../assets/images/logo-shadow.svg";
+import viteLogo from "../../assets/images/vite.svg";
 import salvascLightLogo from "/S_white.svg";
-import viteLogo from "/vite.svg";
 
 import reactRouterLightLogo from "../../assets/images/rr_logo_dark.svg";
 import reactRouterDarkLogo from "../../assets/images/react-router_logo.svg";

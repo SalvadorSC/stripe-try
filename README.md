@@ -26,24 +26,28 @@ This project is a technical assessment for Stripe, developed by **Salvador Sánc
 
 The project is built with the following technologies:
 
-#### Core Technologies  
-<code><img alt="Vite" height="40" src="./public/vite.svg"></code>
+#### Core Technologies
+
+<code><img alt="Vite" height="40" src="./src/assets/images/vite.svg"></code>
 <code><img alt="React" height="40" src="./src/assets/images/react.svg"></code>
 <code><img alt="TypeScript" height="40" src="./src/assets/images/Typescript_logo_2020.svg"></code>
 <code><img alt="React Router" height="40" src="./src/assets/images/rr_logo_dark.svg"></code>
 
 #### Links
+
 - **[Vite](https://vite.dev/)** - Fast frontend tooling for modern web applications.
 - **[React](https://react.dev/)** - Component-based JavaScript library for building UIs.
 - **[TypeScript](https://www.typescriptlang.org/)** - Strongly typed JavaScript for maintainability and scalability.
 - **[React Router](https://reactrouter.com/home)** - Declarative routing for React applications.
-  
-#### Development & Testing  
+
+#### Development & Testing
+
 <code><img alt="Storybook" height="40" src="./src/assets/images/icon-storybook-default.svg"></code>
 <code><img alt="React Testing Library" height="40" src="./src/assets/images/rtl_logo.png"></code>
 <code><img alt="Vitest" height="40" src="./src/assets/images/logo-shadow.svg"></code>
 
 #### Links
+
 - **[Storybook](https://storybook.js.org/)** - UI component explorer and development environment.
 - **[React Testing Library](https://testing-library.com/)** - Testing utilities for verifying UI behavior.
 - **[Vitest](https://vitest.dev/)** - Blazing fast unit testing framework.
@@ -126,9 +130,11 @@ An **Architectural Decision Record (ADR)** is a structured document that capture
 
 This project follows ADRs to document major technical choices. Key decisions include:
 
-1. **Choosing Vite over CRA** - Vite provides better performance and a modern development experience.
-2. **Using Storybook for UI Component Development** - Enables isolated component development and documentation.
+1. **Folder Structure** - Why has it been decided to follow the current conventions.
+2. **Styles Management** - Enables isolated component development and documentation.
 3. **Using React Testing Library + Vitest** - Ensures reliable UI behavior with fast and lightweight testing.
+4. **State Management** - Why if needed, will React Context be used.
+   Other ADRs could be written, in reference to server requests, routing, error handling, etc. but were chosen not to due to finite life of this application.
 
 ADRs are stored in a `docs/adr/` directory for reference.
 
