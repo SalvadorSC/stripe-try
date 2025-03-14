@@ -113,23 +113,6 @@ body {
   margin-bottom: 0;
 }
 
-ul {
-  list-style: none;
-}
-
-li:before {
-  content: "+";
-  margin-right: 4px;
-}
-
-li:has(a),
-li > a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
 .playground {
   display: flex;
   flex-direction: column;
@@ -152,4 +135,13 @@ li > a {
 
 h2 {
   text-decoration: underline;
+}
+
+.playground-ul {
+  text-align: left;
+}
+
+.high {
+  background-color: yellow;
+  color: black;
 }
